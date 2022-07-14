@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Site Survey Form</h1>
+    <p id="description">Let us know what you think about us.</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name:</label> <input id="name" type="text" placeholder="Name" required></input>
+      <label id="email-label">Enter your email: </label><input id="email" type="email" placeholder="Email" required></input>
+      <label id="number-label">Enter your number: </label><input id="number" type="number" min="10" max="99" placeholder="Age"></input>
+      <fieldset>
+        <label id="selectlabel">Which course you like most:</label>
+        <select id="dropdown">
+          <option>Select</option>
+          <option>Python Programming</option>
+          <option>Java Programming</option>
+          <option>Golang Programming</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label id="yes-or-no">Did you like our site:</label>
+        <input name="anyone" type="radio" value="1"></input><label>Yes</label>
+        <input name="anyone" type="radio" value="2"></input><label>No</label>
+      </fieldset>
+      <fieldset><input id="firstcheck" type="checkbox" value="3"></input><label>Did you complete any course</label></fieldset>
+      <fieldset><input type="checkbox" value="4"></input><label>Did you read our <a href="www.google.com">terms and conditions</a></label></fieldset>
+      <fieldset>
+          <label id="comments">Comments : </label>
+          <textarea id="suggestions" placeholder="Enter your suggestions here"></textarea>
+      </fieldset>
+      
+      <input id="submit" type="submit"></input>
+      <fieldset>
+        <i>Thanks for participating in the survey</i>
+      </fieldset>
+    </form>
+  </body>
+  <footer>
+    <a id="infooter" href="www.google.com">www.site.org</a>
+  </footer>
+</html>
